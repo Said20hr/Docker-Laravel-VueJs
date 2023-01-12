@@ -2,7 +2,7 @@
 version: '3'
 services:
     frontend:
-        container_name: frontend
+        container_name: frontend-new
         build:
             context: ./frontend
             dockerfile: Dockerfile
@@ -16,7 +16,7 @@ services:
         depends_on:
             - backend
     backend:
-        container_name: backend
+        container_name: backend-new
         build:
             context: ./backend/vendor/laravel/sail/runtimes/8.2
             dockerfile: Dockerfile
@@ -40,7 +40,7 @@ services:
         depends_on:
             - mysql
     mysql:
-        container_name: mysql
+        container_name: mysql-new
         image: 'mysql:8.0'
         ports:
             - '${FORWARD_DB_PORT:-3306}:3306'
@@ -57,7 +57,7 @@ services:
         healthcheck:
           test: ["CMD", "mysqladmin", "ping"]
     redis:
-        container_name: redis
+        container_name: redis-new
         image: 'redis:alpine'
         ports:
             - '${FORWARD_REDIS_PORT:-6379}:6379'
