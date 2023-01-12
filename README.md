@@ -1,8 +1,8 @@
 # Docker for Laravel & VueJs & TailwindCss
 Welcome to the Docker Starter Kit for Laravel and Vue.js with TailwindCss! This repository contains all the necessary files to get a new project up and running quickly and easily using Docker.
-  
-<img src="img.png" alt="img"> 
-
+  <p align="center">
+    <img src="img.png" alt="img"> 
+ </p>
 ## Prerequisites
 Make sure you have installed the following prerequisites in your development or production machine.
 - PHP : Version 8.1
