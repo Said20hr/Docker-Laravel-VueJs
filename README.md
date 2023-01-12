@@ -1,5 +1,5 @@
-# Docker-Laravel-vueJs
-Welcome to the Docker Starter Kit for Laravel and Vue.js! This repository contains all the necessary files to get a new project up and running quickly and easily using Docker.
+# Docker-Laravel-VueJs
+Welcome to the Docker Starter Kit for Laravel and Vue.js with TailwindCss! This repository contains all the necessary files to get a new project up and running quickly and easily using Docker.
   
 <img src="img.png" alt="img"> 
 
