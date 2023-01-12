@@ -1,23 +1,22 @@
-# Choose the Image which has Node installed already
 FROM node:lts-alpine
 
-# install simple http server for serving static content
-RUN npm install -g http-server
-
-# make the 'app' folder the current working directory
+# set the working direction
 WORKDIR /app
 
-# copy both 'package.json' and 'package-lock.json' (if available)
-COPY package*.json ./
+# install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
 
-# install project dependencies
+# Fix permissions for packages
+# RUN npm config set unsafe-perm true
+
 RUN npm install
+RUN npm install -g serve
 
-# copy project files and folders to the current working directory (i.e. 'app' folder)
-COPY . .
+# Bundle app source
+COPY . ./
 
-# build app for production with minification
-RUN npm run build
+RUN chown -R node:node /app/node_modules
 
-EXPOSE 8080
-CMD [ "http-server", "dist" ]
+# start app
+CMD ["npm", "run", "dev"]
