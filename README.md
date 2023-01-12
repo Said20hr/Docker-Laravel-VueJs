@@ -83,6 +83,6 @@ This repository is open source and can be used by anyone who wants to start a La
 It's easy to use and customize to fit your needs.
 
 ## Licence
-This project is open-source and licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.
+This project is open-source and licensed under the <a href="License.txt">MIT License</a>.
 * Please note that the information above is a sample readme template and may not include all necessary details for your specific project. Replace the links, version numbers, and specific instructions for your project.
 
